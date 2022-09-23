@@ -14,5 +14,16 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #c7b39b; 
+}
+
+.mainText{
+    padding:45px 20px;
+}
+
+.mainImage{
+    width: 400px;
+    height: 400px;
+    border-radius:10px;
 }
