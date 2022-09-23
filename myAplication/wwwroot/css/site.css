@@ -27,3 +27,16 @@ body {
     height: 400px;
     border-radius:10px;
 }
+.smallText{
+    text-align:right;
+    color: gray;
+}
+.myDiv{
+    background:gray;
+    margin: 0;
+    height:237px;
+}
+.myText{
+    margin: 100px 0 20px 0;
+    color:white;
+}

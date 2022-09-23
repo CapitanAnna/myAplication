@@ -2,5 +2,27 @@
 @model myAplication.Pages.PastaModel
 @{
 }
-<a class="nav-link text-dark" asp-area="" asp-page="Forms/CustomPasta">CustomPasta</a>
-<a class="nav-link text-dark" asp-area="" asp-page="Checkout/Checkout">Checkout</a>
+<div class="text-center"> 
+    <div class="mainText">
+        <h1 class="display-4 text-capitalize">we have a great selection of pasta</h1>
+        <h2>Choose pasta or make your own recipe</h2>
+        <p class="smallText"><i>Only one pasta per order</i></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5 mt-5">
+                    <div class="w-100 row myDiv">
+                        <div class="col-4">
+                            <img src="~/images/pasta/italianPasta.jpg" class="w-100"/>
+                        </div>
+                        <div class="col-8 align-items-center">
+                            <div class="align-middle myText">
+                                <h3 style="text-align:left;">Create your own recipe of pasta</h3>
+                                <a class="btn btn-primary" style="float:left;" asp-area="" asp-page="Forms/CustomPasta">Try now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
