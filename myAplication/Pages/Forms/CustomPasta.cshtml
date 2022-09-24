@@ -2,3 +2,21 @@
 @model myAplication.Pages.Forms.CustomPastaModel
 @{
 }
+<div class="text-center container">
+    <h1>Create your own recipe of pasta</h1>
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 pb-5 rounded-5 alert-light col-4">
+        <input type="text" asp-for="Pasta.PastaName" placeholder="Give your pasta name..."/>
+        <br/>
+        <input type="checkbox" asp-for="Pasta.TomatoSauce" placeholder="Tomato Sause"/>TamatoSause
+        <br/>
+        <input type="checkbox" asp-for="Pasta.Mushroom" placeholder="Mushroom"/>Mushroom
+        <br/>
+        <input type="checkbox" asp-for="Pasta.Cheese" placeholder="Cheese"/>Cheese
+        <br/>
+        <input type="checkbox" asp-for="Pasta.Ham" placeholder="Ham"/>Ham
+        <br/>
+        <input type="checkbox" asp-for="Pasta.Tuna" placeholder="Tuna"/>Tuna
+        <br/>
+        <button class="btn btn-primary mt-1" type="submit">Order my pasta</button>
+    </form>
+</div>
