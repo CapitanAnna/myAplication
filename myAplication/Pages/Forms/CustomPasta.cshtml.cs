@@ -8,13 +8,13 @@ namespace myAplication.Pages.Forms
     {
         [BindProperty]
         public PastasModel Pasta { get; set; }
-        public float PastaPrices { get; set; }
+        public float PastaPrice { get; set; }
         public void OnGet()
         {
         }
         public IActionResult OnPost()
         {
-            PastaPrices = Pasta.BasePrice;
+            PastaPrice = Pasta.BasePrice;
             if (Pasta.TomatoSauce)
             {
                 Pasta.TotalPrice += 20;
@@ -36,7 +36,7 @@ namespace myAplication.Pages.Forms
             {
                 Pasta.TotalPrice += 20;
             }
-            return RedirectToPage("/Checkout/Checkout", new {Pasta.PastaName, PastaPrices});
+            return RedirectToPage("/Checkout/Checkout", new {Pasta.PastaName, PastaPrice});
         }
     }
 }

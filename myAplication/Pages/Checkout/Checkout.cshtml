@@ -2,4 +2,16 @@
 @model myAplication.Pages.Checkout.CheckoutModel
 @{
 }
-<a class="nav-link text-dark" asp-area="" asp-page="Checkout/Thanks">Thanks</a>
+<h1>Your order!</h1>
+@{
+    var imagePath = "~/images/pasta/" + (@Model.ImageTitle + ".jpg");
+}
+<div class="align-content-center"> 
+    <div class="col-3 mx-auto mb-5">
+        <img src="@imagePath" class="w-100" asp-append-version="true"/>
+        <p>Your order for the @Model.PastaName is ready</p>
+        <p>Total price is:  @Model.PastaPrice MDL</p>
+        <br/>
+        <a class="btn btn-primary mt-1 mx-auto" asp-area="" asp-page="Thanks">Confirm your order</a>
+    </div>
+</div>

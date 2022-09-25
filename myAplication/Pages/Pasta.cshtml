@@ -22,6 +22,16 @@
                         </div>
                     </div>
                 </div>
+                @foreach (var pasta in Model.myPastaDB)
+                    {
+                    var imagePath = "~/images/pasta/" + (pasta.ImageTitle + ".jpg");
+                    <div class="col-4 mb-5">
+                            <img src="@imagePath" class="img" asp-append-version="true"/>
+                            <a class="btn btn-primary mt-1" asp-area="" asp-page="Checkout/Checkout">Get this pasta!</a>
+                            <br/>
+                        </div>
+                    }
+                
             </div>
         </div>
     </div>
