@@ -15,7 +15,7 @@ namespace myAplication.Pages.Checkout
         {
             if (string.IsNullOrWhiteSpace(PastaName))
             {
-                PastaName = "Custom";
+                PastaName = "customPasta";
             }
             if (string.IsNullOrWhiteSpace(ImageTitle))
             {

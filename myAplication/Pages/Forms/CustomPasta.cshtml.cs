@@ -17,24 +17,24 @@ namespace myAplication.Pages.Forms
             PastaPrice = Pasta.BasePrice;
             if (Pasta.TomatoSauce)
             {
-                Pasta.TotalPrice += 20;
+                PastaPrice += 20;
 
             }
             if (Pasta.Cheese)
             {
-                Pasta.TotalPrice += 30;
+                PastaPrice += 30;
             }
             if (Pasta.Tuna)
             {
-                Pasta.TotalPrice += 40;
+                PastaPrice += 40;
             }
             if (Pasta.Ham)
             {
-                Pasta.TotalPrice += 35;
+                PastaPrice += 35;
             }
             if (Pasta.Mushroom)
             {
-                Pasta.TotalPrice += 20;
+                PastaPrice += 20;
             }
             return RedirectToPage("/Checkout/Checkout", new {Pasta.PastaName, PastaPrice});
         }
